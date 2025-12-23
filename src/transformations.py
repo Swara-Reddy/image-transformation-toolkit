@@ -44,8 +44,15 @@ def shear(image, shx, shy):
 
 
 def reflect(image):
-    reflection_matrix = np.array([
-        [-1, 0],
-        [0, 1]
-    ])
-    return apply_transformation(image, reflection_matrix)
+    height, width = image.shape
+    reflected = np.zeros_like(image)
+
+    for x in range(height):
+        for y in range(width):
+            nx = height - 1 - x   # vertical reflection
+            ny = y
+
+            reflected[nx, ny] = image[x, y]
+
+    return reflected
+
