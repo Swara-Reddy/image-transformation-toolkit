@@ -13,4 +13,6 @@ def show_images(original, transformed, title):
     plt.imshow(transformed, cmap="gray")
     plt.axis("off")
 
+    plt.tight_layout()
     plt.show()
+    plt.close()
