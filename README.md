@@ -37,6 +37,18 @@ Each transformation is implemented using its corresponding transformation matrix
 - Pillow (for image loading)
 
 ---
+#Sample Output
 
-## 📂 Project Structure
+#Scaled Image
+![Scaled](images/scaled.jpeg)
+
+#Rotated Image
+![Rotated](images/rotated.jpeg)
+
+# Sheared Image
+![Sheared](images/sheared.jpeg)
+
+#Reflected Image
+![Reflected](images/reflected.jpeg)
+
 
